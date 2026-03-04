@@ -1,10 +1,8 @@
+#include "Operator.cpp"
 
-#include "Operand.cpp"
-
-class Modulus : public Operand{
-	public:
-		int calculate(int a, int b){
-			return a % b;
-		}
-
+class Modulus : public Operator{
+    public:
+        int calculate(int a, int b){
+            return a % b;
+        }    
 };
