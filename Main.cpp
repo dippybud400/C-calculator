@@ -1,5 +1,5 @@
 #include <iostream>
-#include "calculator/Modulus.cpp"
+#include "calculator/Power.cpp"
 #include "calculator/Division.cpp"
 #include "history/History.cpp"
 
@@ -10,9 +10,9 @@ int main(){
 	int b = 2;
     string saveFile = "results.txt";
     History h;
-    Modulus m;
-    int result = m.calculate(a, b);
-    h.addRegistry(a, "%", b, result);
+    Power p;
+    int result = p.calculate(a, b);
+    h.addRegistry(a, "^", b, result);
     h.show();
     h.writeToFile(saveFile, h.toString());
     
