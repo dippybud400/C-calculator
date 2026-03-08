@@ -1,6 +1,6 @@
 #pragma once
-#include <iostream>
-#include <fstream>
+#include <iostream> // necesary for performing file I/O
+#include <fstream> // library for reading & writing files
 #include <string>
 
 class FileOutput{
